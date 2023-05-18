@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="actiTIME Automation Test">
+	<test name="actiTIME Test Cases">
+		<classes>
+			<class name="com.testcases.LoginTest"></class>		
+			<class name="com.testcases.HomeTest"></class>
+			<class name="com.testcases.UsersTest"></class>
+			<class name="com.testcases.ApproveTimeTrackTest"></class>
+		</classes>
+	</test>
+</suite>
