@@ -13,6 +13,15 @@ public class ApproveTimeTrack extends TestBase{
 	@FindBy(xpath="//td[contains(text(),'Approve Time-Track')]")
 	WebElement contentTitle;
 	
+	@FindBy(xpath="//table//input[@type='checkbox']")
+	WebElement checkBox;
+	
+	@FindBy(xpath="//span[@id='approveButton']")
+	WebElement approveBtn;
+	
+	@FindBy(xpath="//span[@id='rejectButton']")
+	WebElement rejectBtn;
+	
 	//actions:
 	public String verifyApproveTimePageTitle() {
 		return driver.getTitle();
@@ -28,6 +37,7 @@ public class ApproveTimeTrack extends TestBase{
 	
 	public void selectTimeStatus() {
 		driver.findElement(By.xpath("//table//input[@type='checkbox']")).click();
+		driver.findElement(By.xpath("//span[@class='actionButton approve']")).click();
 	}
 	
 }
